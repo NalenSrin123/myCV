@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRIN NALEN - CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cv-container {
+      display: flex;
+      background: white;
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      background: #211737;
+      color: white;
+      width: 38%;
+      padding: 30px;
+    
+    }
+
+    .left-panel .photo {
+      text-align: center;
+    }
+
+    .left-panel img {
+      width: 120px;
+      border-radius:50%;
+      border: 4px solid #fff;
+    }
+
+    .left-panel h2 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section-title {
+      background: #fff;
+      color: #2c1e4a;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 10px;
+    }
+
+    .right-panel {
+      width: 62%;
+      padding: 30px 40px;
+    }
+
+    .right-panel h1 {
+      font-size: 28px;
+    }
+
+    .right-panel h1 span {
+      color: #5b2c82;
+    }
+
+    .position {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .right-section {
+      margin-top: 30px;
+    }
+
+    .right-section h3 {
+      color: #2c1e4a;
+      margin-bottom: 10px;
+    }
+
+    .right-section ul {
+      padding-left: 20px;
+    }
+
+    .references {
+      display: flex;
+      gap: 40px;
+    }
+
+    .references div {
+      flex: 1;
+    }
+
+    .edu-block {
+      margin-bottom: 20px;
+    }
+
+    .edu-block h4 {
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .edu-block p {
+      font-size: 14px;
+      color: #ddd;
+    }
+    /* Add this at the bottom of your existing <style> block */
+@media (max-width: 768px) {
+  body{
+    padding: 0;
+  }
+  .cv-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-panel {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .right-panel {
+    padding: 20px;
+  }
+
+  .right-panel h1 {
+    font-size: 24px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .right-section h3 {
+    font-size: 18px;
+  }
+
+  .edu-block h4 {
+    font-size: 14px;
+  }
+
+  .edu-block p {
+    font-size: 13px;
+  }
+
+  .references {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-panel img {
+    width: 100px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="left-panel">
+      <div class="photo">
+        <img src="image.png" alt="Srin Nalen">
+        <h2>SRIN NALEN</h2>
+        <p>Web Developer</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">CONTACT</div>
+        <ul>
+          <li>📞 087 294 774</li>
+          <li>✉️ nulenrink@gmail.com</li>
+          <li>📍 Teuk Thla, Sen Sok, Phnom Penh</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">EDUCATION</div>
+        <div class="edu-block">
+          <h4>Royal University of Phnom Penh</h4>
+          <p>Bachelor’s Degree in Computer Science<br>2023 – Present</p>
+        </div>
+        <div class="edu-block">
+          <h4>Hun Sen Kang Tanoeng High School</h4>
+          <p>High School Diploma<br>2016 – 2022</p>
+        </div>
+        <div class="edu-block">
+          <h4>Hun Sen Roka Ar Primary School</h4>
+          <p>Primary Education<br>2010-2016</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">SKILLS</div>
+        <ul>
+          <li>HTML, CSS, JS, PHP, MySQL</li>
+          <li>React.js, Vue.js, Laravel</li>
+          <li>GitHub, Git</li>
+          <li>Communication</li>
+          <li>Critical Thinking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h1>SRIN <span>NALEN</span></h1>
+      <p class="position">Web Developer</p>
+
+      <div class="right-section">
+        <h3>ABOUT ME</h3>
+        <p>I'm a passionate Web Developer and IT instructor with expertise in full-stack development and digital solutions. Currently pursuing my Bachelor's Degree in Computer Science at the Royal University of Phnom Penh, I combine technical knowledge with hands-on experience.</p>
+        <ul>
+          <li>HTML, CSS, JavaScript, React, Vue.js</li>
+          <li>PHP, MySQL, Git</li>
+          <li>Teaching and mentoring students</li>
+        </ul>
+        <p>Driven by creativity and problem-solving, I thrive in collaborative environments—whether building responsive websites, optimizing user experiences, or contributing to community initiatives like literacy programs. My goal is to leverage technology to create impactful, user-centric solutions.
+        </p>
+      </div>
+
+      <div class="right-section">
+        <h3>WORK EXPERIENCE</h3>
+        <p><strong>Engineering of Technology and Electronic Center</strong><br>
+        <em>IT Instructor | Feb 2024 – Present</em></p>
+        <ul>
+          <li>Teach students IT and technical subjects.</li>
+          <li>Website design, SEO, and branding strategies.</li>
+        </ul>
+
+        <p><strong>Volunteer for My Community (VMC)</strong><br>
+        <em>Volunteer | Oct – Dec 2021</em></p>
+        <ul>
+          <li>Promoted literacy via "Books Are a Sharehouse of Knowledge"</li>
+          <li>Organized workshops and developed content</li>
+        </ul>
+      </div>
+
+      <div class="right-section">
+        <h3>REFERENCES</h3>
+        <div class="references">
+          <div>
+            <strong>Heng Pheakna</strong><br>
+            ETEC Center / CEO<br>
+            Phone: 076 226 8884<br>
+            Email: kruitchetlaor@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
