@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SRIN NALEN - CV</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="cv-container">
+    <!-- Left Panel -->
     <div class="left-panel">
       <div class="photo">
-        <img src="image.png" alt="Srin Nalen">
-        <h2 >SRIN NALEN</h2>
+        <img src="profile.png" alt="Srin Nalen" />
+        <h2>SRIN NALEN</h2>
         <p>Web Developer</p>
       </div>
-
       <div class="section">
         <div class="section-title">CONTACT</div>
         <ul>
@@ -24,12 +25,11 @@
           <li>📍 Teuk Thla, Sen Sok, Phnom Penh</li>
         </ul>
       </div>
-
       <div class="section">
         <div class="section-title">EDUCATION</div>
         <div class="edu-block">
           <h4>Royal University of Phnom Penh</h4>
-          <p>Bachelor’s Degree in Computer Science<br>2023 – Present</p>
+          <p>Bachelor’s in Computer Science<br>2023 – Present</p>
         </div>
         <div class="edu-block">
           <h4>Hun Sen Kang Tanoeng High School</h4>
@@ -37,24 +37,24 @@
         </div>
         <div class="edu-block">
           <h4>Hun Sen Roka Ar Primary School</h4>
-          <p>Primary Education<br>2010-2016</p>
+          <p>Primary Education<br>2010 – 2016</p>
         </div>
       </div>
-
       <div class="section">
         <div class="section-title">SKILLS</div>
         <ul>
           <li>HTML, CSS, JS, PHP, MySQL</li>
           <li>React.js, Vue.js, Laravel</li>
-          <li>GitHub, Git</li>
+          <li>Git, GitHub</li>
           <li>Communication</li>
           <li>Critical Thinking</li>
         </ul>
       </div>
     </div>
 
+    <!-- Right Panel -->
     <div class="right-panel">
-      <span id="name"></span> <br>
+      <span id="name"></span><br />
       <span class="position">Web Developer</span>
 
       <div class="right-section">
@@ -65,20 +65,19 @@
           <li>PHP, MySQL, Git</li>
           <li>Teaching and mentoring students</li>
         </ul>
-        <p>Driven by creativity and problem-solving, I thrive in collaborative environments—whether building responsive websites, optimizing user experiences, or contributing to community initiatives like literacy programs. My goal is to leverage technology to create impactful, user-centric solutions.
-        </p>
+        <p>Driven by creativity and problem-solving, I thrive in collaborative environments—whether building responsive websites, optimizing user experiences, or contributing to community initiatives like literacy programs.</p>
       </div>
 
       <div class="right-section">
         <h3>WORK EXPERIENCE</h3>
-        <p><strong>Engineering of Technology and Electronic Center</strong><br>
+        <p><strong>Engineering of Technology and Electronic Center</strong><br />
         <em>IT Instructor | Feb 2024 – Present</em></p>
         <ul>
           <li>Teach students IT and technical subjects.</li>
           <li>Website design, SEO, and branding strategies.</li>
         </ul>
 
-        <p><strong>Volunteer for My Community (VMC)</strong><br>
+        <p><strong>Volunteer for My Community (VMC)</strong><br />
         <em>Volunteer | Oct – Dec 2021</em></p>
         <ul>
           <li>Promoted literacy via "Books Are a Sharehouse of Knowledge"</li>
@@ -89,30 +88,34 @@
       <div class="right-section">
         <h3>REFERENCES</h3>
         <div class="references">
-          <!-- <div>
-            <strong>Heng Pheakna</strong><br>
-            ETEC Center / CEO<br>
-            Phone: 076 226 8884<br>
-            Email: kruitchetlaor@gmail.com
-          </div> -->
           <div>
-            <strong>--- ----</strong><br>
-            ---- ---- / CEO<br>
-            Phone: 012 --- ---<br>
-            Email:-----@gmail.com
+            <em>Available upon request</em>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Funny Popup -->
+  <div class="pop">
+    <div class="ads d-flex justify-content-center align-items-center">
+      <span id="ads-text"></span>
+      <i class="bi bi-x-circle" id="close" aria-label="Close Popup"></i>
+    </div>
+    <div class="image">
+      <h1 class="close-text">ចង់បិទអីគេ ៗៗៗ!</h1>
+      <img src="https://i.pinimg.com/originals/1d/d0/4c/1dd04cdc2b9981ebdfceffa927a7b053.gif" alt="Funny GIF" />
+      <div>
+        <button class="btn btn-danger btn-cancel">Cancel</button>
+        <button class="btn btn-primary btn-ok">OK</button>
+      </div>
+    </div>
+    <div class="div">
+      <span class="text-ok"></span>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-<script>
-  var typed = new Typed('#name', {
-    strings: ['SRIN NALEN'],
-    typeSpeed: 120,
-    loop: true,
-    backSpeed: 120,
-  });
-  
-</script>
